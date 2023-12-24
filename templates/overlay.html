@@ -1,0 +1,36 @@
+<div class="container over-main">
+  <div class="overlay container">
+    <div class="container" id="form-box">
+      {% if req == 'create' %}
+        <div>
+          <h2>{{ note_name }}</h2>
+          <span class="caption">Looks like <a href="#">savenote.io/{{ note_name }}</a> doesn't exist.</span>
+        </div>
+        <form class="create-box">
+          <h3>Do you want to create it?</h3>
+          <div class="input-grp">
+            <label for="passwd1">Please create a password</label>
+            <input type="password" name="passwd" id="passwd1">
+          </div>
+          <div class="input-grp">
+            <label for="passwd2">Please re-enter the password</label>
+            <input type="password" name="passwd" id="passwd2">
+          </div>
+          <span class="error"></span>
+          <button class="btn" id="create-btn" onclick="createNote()">Create</button>
+          <button class="btn" onclick="goBack()">Go Back</button>
+        </form>
+      {% elif req == 'passwd' %}
+        <h2>{{ note_name.title() }}</h2>
+        <form class="create-box">
+          <div class="input-grp">
+            <label for="passwd">Enter the password</label>
+            <input type="password" name="passwd" id="passwd">
+          </div>
+          <span class="error"></span>
+          <button class="btn" onclick="checkPasswd()">Enter</button>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+</div>

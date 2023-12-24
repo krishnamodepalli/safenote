@@ -1,0 +1,10 @@
+
+instance/
+.vscode/
+.idea/
+data/
+__pycache__/
+
+*.db    # all kinds of dabasefile
+Pipfile
+

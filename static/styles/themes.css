@@ -1,0 +1,10 @@
+
+/* light theme */
+:root {
+    --primary-bg: #e1e2ef;
+    --sec-bg: #05204a;
+    --primary-col: #02020a;
+    --sec-col: #bfacaa;
+
+    --primary-ft: 'Microsoft Sans Serif', Tahoma, Arial, Verdana, Sans-Serif;
+}
